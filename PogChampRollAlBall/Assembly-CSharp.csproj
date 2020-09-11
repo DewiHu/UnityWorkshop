@@ -603,6 +603,18 @@
       <Project>{6D36FEBA-933E-DE7E-6B83-0659AD43F2B5}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.csproj">
+      <Project>{74DAA85C-7D33-C5ED-70F3-5F06D5AFFF8D}</Project>
+      <Name>Unity.ProBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
+      <Project>{6369B5EA-56C3-6994-D721-A9AB16EC2740}</Project>
+      <Name>Unity.ProBuilder.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
+      <Project>{D5DE4761-6467-97EA-0033-9ABA80DFBC92}</Project>
+      <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{8D14D17D-2F2E-D08F-BB81-CEDDBE9FF906}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
@@ -622,6 +634,10 @@
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{B9554C0E-3C0F-C4D8-0EF8-AF2371CB23E8}</Project>
       <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
+      <Project>{F462F52C-8B41-0D6F-0BDC-653A5D467380}</Project>
+      <Name>Unity.ProBuilder.AddOns.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{F6C951C8-554C-A0CE-DC3E-F6CDE5F939B3}</Project>
