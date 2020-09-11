@@ -6231,6 +6231,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4541686838346011375, guid: 939b5208782e3c24caaae7bc50a86b43,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 939b5208782e3c24caaae7bc50a86b43, type: 3}
 --- !u!1 &329574116
@@ -6245,9 +6250,10 @@ GameObject:
   - component: {fileID: 329574119}
   - component: {fileID: 329574118}
   - component: {fileID: 329574117}
+  - component: {fileID: 329574121}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6321,12 +6327,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329574116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 223.05835, y: -0.54, z: 122.670006}
+  m_LocalPosition: {x: 223.05835, y: -0, z: 122.670006}
   m_LocalScale: {x: 2.7356, y: 1.0942401, z: 2.7356}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &329574121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329574116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9afffe65866c57044855924f86bb5263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &332960441
 GameObject:
   m_ObjectHideFlags: 0
@@ -30448,7 +30466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578106745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 223.26599, y: 0.42, z: 121.536}
+  m_LocalPosition: {x: 223.26599, y: 0.42, z: 121.6}
   m_LocalScale: {x: 2.7656984, y: 2.48, z: 2.8512638}
   m_Children: []
   m_Father: {fileID: 0}
