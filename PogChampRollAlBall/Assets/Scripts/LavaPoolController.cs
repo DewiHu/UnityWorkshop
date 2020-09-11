@@ -9,7 +9,7 @@ public class LavaPoolController : MonoBehaviour
         
         if(other.collider.gameObject.name == "Player")
         {
-            Vector3 spawnPoint = new Vector3(1.83f, 3f, 0.75f);
+            Vector3 spawnPoint = new Vector3(339.2f, 3.02f, 7.69f);
             other.transform.position = spawnPoint;
             other.rigidbody.velocity = new Vector3(0, 0, 0);
         }
