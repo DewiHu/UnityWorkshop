@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5605271445476771571}
   - component: {fileID: 5605271445476771575}
   - component: {fileID: 5605271445476771574}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ball Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}

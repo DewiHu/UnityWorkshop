@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7169139801154499073}
   - component: {fileID: 7169139801154499077}
   - component: {fileID: 7169139801154499076}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}

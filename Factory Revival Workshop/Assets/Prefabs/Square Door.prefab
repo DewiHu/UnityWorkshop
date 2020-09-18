@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7606552174706399998}
   - component: {fileID: 7606552174706399994}
   - component: {fileID: 7606552174706399995}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Square Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}

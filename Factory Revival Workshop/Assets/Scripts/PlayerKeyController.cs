@@ -18,7 +18,7 @@ public class PlayerKeyController : MonoBehaviour
     {
         foreach (GameObject key in keys)
         {
-            key.transform.position = transform.position + transform.up * 2;
+            key.transform.position = transform.position + (transform.up * (keys.IndexOf(key) + 1));
         }
     }
 
