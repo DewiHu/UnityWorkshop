@@ -1144,11 +1144,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Door
       objectReference: {fileID: 0}
-    - target: {fileID: 7169139801154499076, guid: 6d3017fe06c739c4c96400b72050c5f2,
-        type: 3}
-      propertyPath: travelSpeed
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d3017fe06c739c4c96400b72050c5f2, type: 3}
 --- !u!114 &7799739126154198227 stripped
