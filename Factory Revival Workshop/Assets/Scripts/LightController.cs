@@ -5,18 +5,22 @@ using UnityEngine;
 
 public class LightController : MonoBehaviour
 {
-    public Light[] PointLight;
     public GameObject lights;
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
-        if(Input.GetMouseButtonDown(0))
+        foreach (var light in lights.GetComponentsInChildren<Light>())
         {
-            foreach(var light in lights.GetComponentsInChildren<Light>())
-            {              
-                light.enabled = !light.enabled;
-            }
+            light.enabled = !light.enabled;
+        }
+    }
+
+    // Update is called once per frame
+    public void EnableLights()
+    {
+        foreach (var light in lights.GetComponentsInChildren<Light>())
+        {
+            light.enabled = !light.enabled;
         }
     }
 }
