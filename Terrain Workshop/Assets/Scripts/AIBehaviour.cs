@@ -27,7 +27,7 @@ public class AIBehaviour : MonoBehaviour
     void Start()
     {
         currentState = state.Patrol;
-        agent = this.GetComponent<NavMeshAgent>();
+        agent = gameObject.GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
