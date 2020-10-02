@@ -2310,7 +2310,6 @@ GameObject:
   - component: {fileID: 749811720}
   - component: {fileID: 749811719}
   - component: {fileID: 749811718}
-  - component: {fileID: 749811721}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2381,6 +2380,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 70, y: -130, z: 0}
 --- !u!114 &749811721
@@ -2396,6 +2396,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 878289903}
+=======
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 45, y: -135, z: 0}
+>>>>>>> Stashed changes
 --- !u!1 &773477414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2874,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!114 &878289904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2884,6 +2889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 749811719}
   agent: {fileID: 878289910}
+=======
+>>>>>>> Stashed changes
 --- !u!136 &878289905
 CapsuleCollider:
   m_ObjectHideFlags: 0
