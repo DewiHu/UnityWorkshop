@@ -19,6 +19,8 @@ public class AIBehaviour : MonoBehaviour
     public float patrolAreaHeight = 50;
     public float patrolAreaWidth = 50;
 
+    private Vector3 originPosition;
+
     public Vector3 destinationPos;
     private NavMeshAgent agent;
 
@@ -28,6 +30,8 @@ public class AIBehaviour : MonoBehaviour
     {
         currentState = state.Patrol;
         agent = gameObject.GetComponent<NavMeshAgent>();
+        destinationPos = new Vector3(Random.Range(transform.position.x - patrolAreaHeight, transform.position.x + patrolAreaHeight), 0, Random.Range(transform.position.z - patrolAreaWidth, transform.position.z + patrolAreaWidth));
+        originPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -45,7 +49,7 @@ public class AIBehaviour : MonoBehaviour
     {
         if(Vector3.Distance(transform.position, destinationPos) <= 10f)
         {
-            destinationPos = new Vector3(Random.Range(0, patrolAreaHeight), 0, Random.Range(0,patrolAreaWidth));
+            destinationPos = new Vector3(Random.Range(originPosition.x - patrolAreaHeight, originPosition.x + patrolAreaHeight), 0, Random.Range(originPosition.z - patrolAreaWidth, originPosition.z + patrolAreaWidth));
         }
         if(Vector3.Distance(transform.position, player.transform.position) <= chaseRadius)
         {
