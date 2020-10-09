@@ -34,6 +34,5 @@ public class KeyPickup : MonoBehaviour
             gate.SetActive(!hasKey);
             other.gameObject.transform.GetChild(0).SetParent(transform);
         } 
-
     }
 }

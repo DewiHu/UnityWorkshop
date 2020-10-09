@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - WanderPoint
   - Cat
+  - Flail
   layers:
   - Default
   - TransparentFX

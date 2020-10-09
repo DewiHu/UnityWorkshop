@@ -26,7 +26,7 @@ public class Nescontroller : MonoBehaviour
         joint = GetComponent<CharacterJoint>();
         joint.connectedBody = instantiatedController.GetComponent<Rigidbody>();
 
-        transform.parent.GetComponentInChildren<RopeController>().hangingFromRope = instantiatedController.transform;
+        transform.parent.transform.GetChild(2).GetComponent<RopeController>().hangingFromRope = instantiatedController.transform;
     }
 
     // Update is called once per frame
