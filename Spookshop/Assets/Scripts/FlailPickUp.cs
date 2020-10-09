@@ -29,6 +29,7 @@ public class FlailPickUp : MonoBehaviour
             Debug.Log("Collided with flail");
             hasFlail = true;
             other.gameObject.transform.SetParent(transform.GetChild(0));
+            other.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }
 }

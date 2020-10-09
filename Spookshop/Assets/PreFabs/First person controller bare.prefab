@@ -89,8 +89,8 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 38.64
-  m_SpotAngle: 100.1
+  m_Range: 69
+  m_SpotAngle: 69
   m_InnerSpotAngle: 4
   m_CookieSize: 10
   m_Shadows:
@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 4663466683574643211}
   - component: {fileID: 4663466683574643205}
   - component: {fileID: 1812109169}
+  - component: {fileID: 252399400}
   m_Layer: 0
   m_Name: First person controller bare
   m_TagString: Player
@@ -378,7 +379,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -393,9 +394,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1.8
+  m_Height: 3.9375916
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9, z: 0}
+  m_Center: {x: 0, y: 1.9687958, z: 0}
 --- !u!114 &4694450872475687455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,8 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fca36bd81de7c4cafce7bbf02ca611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkspeed: 5
-  sprintspeed: 0
+  walkspeed: 20
+  sprintspeed: 30
 --- !u!114 &4661688067150705456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,7 +469,7 @@ MonoBehaviour:
   percentagetext: {fileID: 0}
   flashlight: {fileID: 4661688067270156741}
   percentage: 15
-  timeBetweenChanges: 2
+  timeBetweenChanges: 60
 --- !u!114 &1812109169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,3 +484,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flail: {fileID: 0}
   hasFlail: 0
+--- !u!114 &252399400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4663466683574643209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c03fb5c0cd963448380f259df608e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 0}
+  gate: {fileID: 0}
+  hasKey: 0
