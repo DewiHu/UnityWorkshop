@@ -6,9 +6,9 @@ TagManager:
   tags:
   - UI
   - BatteryPercentage
-  tags:
   - Enemy
   - WanderPoint
+  - Cat
   layers:
   - Default
   - TransparentFX

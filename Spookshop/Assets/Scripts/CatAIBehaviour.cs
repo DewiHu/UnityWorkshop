@@ -32,7 +32,6 @@ public class CatAIBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentState);
 
         switch (currentState)
         {
@@ -66,7 +65,7 @@ public class CatAIBehaviour : MonoBehaviour
         }
 
         var fleeVector = transform.position - player.transform.position;
-        destinationPos = transform.position + fleeVector;
+        destinationPos = transform.position + fleeVector.normalized * fleeRadius;
         agent.SetDestination(destinationPos);
     }
 

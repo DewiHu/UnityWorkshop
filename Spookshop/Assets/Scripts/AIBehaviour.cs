@@ -33,8 +33,6 @@ public class AIBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentState);
-
         switch (currentState)
         {
             case State.Patrol: 
