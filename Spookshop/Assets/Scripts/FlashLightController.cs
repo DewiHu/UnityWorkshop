@@ -9,7 +9,6 @@ public class FlashLightController : MonoBehaviour
     public Light flashlight;
     public float percentage = 15f;
     public float timeBetweenChanges = 10;
-    private float lastChange;
 
     // Start is called before the first frame update
     void Start()
@@ -19,24 +18,25 @@ public class FlashLightController : MonoBehaviour
             Debug.Log("REEEEEE");
         }
 
-        lastChange = Time.time;
+        StartCoroutine(LowerPercentage());
     }
 
     // Update is called once per frame
     void Update()
+    { 
+    }
+
+
+    IEnumerator LowerPercentage()
     {
-        if(Time.time - lastChange >= timeBetweenChanges && percentage > 0)
+        while(percentage > 0)
         {
             percentage--;
-            lastChange = Time.time;
+            percentagetext.text = percentage + "%";
+            yield return new WaitForSeconds(timeBetweenChanges);
         }
+        flashlight.intensity = 0;
 
-
-        percentagetext.text = percentage + "%";
-
-        if(percentage <= 0)
-        {
-            flashlight.intensity = 0;
-        }
+        
     }
 }
